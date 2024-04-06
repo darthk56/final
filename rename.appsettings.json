@@ -2,6 +2,9 @@
     "Data": {
       "Northwind": {
         "ConnectionString": "Server=bitsql.wctc.edu;Database=Northwind_##_XXX;User ID=YYY;Password=ZZZ"
+      },
+      "AppIdentity": {
+        "ConnectionString": "Server=bitsql.wctc.edu;Database=Identity_##_XXX;User ID=YYY;Password=ZZZ"
       }
     },
     "_comment": {
