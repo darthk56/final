@@ -19,3 +19,13 @@
   }
   </tbody>
 </table>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    fetchProducts();
+  });
+  async function fetchProducts() {
+    const { data: fetchedProducts } = await axios.get('../../api/product');
+    console.log(fetchedProducts);
+  }
+</script>
