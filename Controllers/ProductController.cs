@@ -8,6 +8,6 @@ public class ProductController : Controller
   public IActionResult Category() => View(_dataContext.Categories.OrderBy(c => c.CategoryName));
   public IActionResult Index(int id){
     ViewBag.id = id;
-    return View();
+    return View(_dataContext.Categories.OrderBy(c => c.CategoryName));
   }
 }
