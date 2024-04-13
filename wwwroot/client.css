@@ -73,3 +73,6 @@ body {
 {
   color: red;
 }
+.discontinued {
+  opacity: .5;
+}
