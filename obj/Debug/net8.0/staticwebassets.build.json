@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "xlBvESGUCFBx7BI6N8ddgjqycbIt40aFuxspDclipK0=",
+  "Source": "Northwind",
+  "BasePath": "_content/Northwind",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Northwind\\wwwroot",
+      "Source": "Northwind",
+      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "BasePath": "_content/Northwind",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\client.css",
+      "SourceId": "Northwind",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "BasePath": "_content/Northwind",
+      "RelativePath": "client.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\client.css"
+    },
+    {
+      "Identity": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\discount.js",
+      "SourceId": "Northwind",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "BasePath": "_content/Northwind",
+      "RelativePath": "discount.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\discount.js"
+    },
+    {
+      "Identity": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\product.js",
+      "SourceId": "Northwind",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "BasePath": "_content/Northwind",
+      "RelativePath": "product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\product.js"
+    }
+  ]
+}

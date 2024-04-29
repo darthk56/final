@@ -29,5 +29,9 @@ namespace Northwind.Controllers
         [HttpGet, Route("api/category")]
         // returns all categories
          public IEnumerable<Category> GetCategory() => _dataContext.Categories.Include("Products").OrderBy(c => c.CategoryName);
+        [HttpGet, Route("api/seecart")]
+        // adds a row to the cartitem table
+        public IEnumerable<CartItem> GetCart() => _dataContext.CartItems;
+        
     }
 }

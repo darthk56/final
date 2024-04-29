@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 public class ProductController : Controller
 {
@@ -10,4 +11,6 @@ public class ProductController : Controller
     ViewBag.id = id;
     return View(_dataContext.Categories.OrderBy(c => c.CategoryName));
   }
+  public IActionResult Cart() => View(_dataContext.CartItems.Include("Product").OrderBy(c => c.CartItemId));
+
 }

@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\client.css",
+      "PackagePath": "staticwebassets\\client.css"
+    },
+    {
+      "Id": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\discount.js",
+      "PackagePath": "staticwebassets\\discount.js"
+    },
+    {
+      "Id": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\product.js",
+      "PackagePath": "staticwebassets\\product.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Northwind.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Northwind.props",
+      "PackagePath": "build\\Northwind.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Northwind.props",
+      "PackagePath": "buildMultiTargeting\\Northwind.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Northwind.props",
+      "PackagePath": "buildTransitive\\Northwind.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

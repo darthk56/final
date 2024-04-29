@@ -1,0 +1,9 @@
+@model IEnumerable<CartItem>
+
+<h2 class="mt-3"><i class="fas fa-list-ul"></i> Cart</h2>
+<div class="list-group">
+    @foreach (CartItem c in Model)
+    {
+        <a asp-action="#" asp-route-id="@c.CartItemId" class="list-group-item list-group-item-action">@c.Product.ProductName - <i style="opacity:.6;">@c.ProductId</i></a>
+    }
+</div>

@@ -10,6 +10,7 @@ document.getElementById('Discontinued').addEventListener("change", (e) => {
 });
 // delegated event listener
 document.getElementById('product_rows').addEventListener("click", (e) => {
+  const cart = new bootstrap.Modal('#cartModal', {})
   p = e.target.parentElement;
   if (p.classList.contains('product')) {
     e.preventDefault()
@@ -18,8 +19,9 @@ document.getElementById('product_rows').addEventListener("click", (e) => {
       document.getElementById('ProductId').innerHTML = p.dataset['id'];
       document.getElementById('ProductName').innerHTML = p.dataset['name'];
       document.getElementById('UnitPrice').innerHTML = Number(p.dataset['price']).toFixed(2);
+      
       display_total();
-      const cart = new bootstrap.Modal('#cartModal', {}).show();
+      cart.show();
     } else {
       // alert("Only signed in customers can add items to the cart");
       toast("Access Denied", "You must be signed in as a customer to access the cart.");
