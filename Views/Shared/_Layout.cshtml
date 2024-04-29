@@ -54,7 +54,13 @@
                       }
                     </ul>
                 </li>
-                                        <li><a class="nav-link" asp-controller="Product"  asp-action="Cart"><i class="bi bi-list"></i> Cart</a></li>
+                @if (User?.Identity?.IsAuthenticated ?? false)
+                {
+                        if (User.IsInRole("northwind-customer"))
+                        {
+                            <li><a class="nav-link" asp-controller="Product"  asp-action="Cart"><i class="bi bi-list"></i> Cart</a></li>
+                        }
+                }
             </ul>
             @if (User?.Identity?.IsAuthenticated ?? false)
             {

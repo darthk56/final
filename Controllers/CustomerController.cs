@@ -9,9 +9,9 @@ public class CustomerController(DataContext db, UserManager<AppUser> usrMgr) : C
   private readonly UserManager<AppUser> _userManager = usrMgr;
 
   public IActionResult Register() => View();
-    [HttpPost]
-    [ValidateAntiForgeryToken]
-    public async System.Threading.Tasks.Task<IActionResult> Register(CustomerWithPassword customerWithPassword)
+  [HttpPost]
+  [ValidateAntiForgeryToken]
+  public async System.Threading.Tasks.Task<IActionResult> Register(CustomerWithPassword customerWithPassword)
     {
       if (ModelState.IsValid)
       {

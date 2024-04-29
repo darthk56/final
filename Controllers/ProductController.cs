@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 public class ProductController : Controller
@@ -12,5 +14,18 @@ public class ProductController : Controller
     return View(_dataContext.Categories.OrderBy(c => c.CategoryName));
   }
   public IActionResult Cart() => View(_dataContext.CartItems.Include("Product").OrderBy(c => c.CartItemId));
+  
+    [Authorize(Roles = "northwind-customer"), HttpPost, ValidateAntiForgeryToken]
+    public async System.Threading.Tasks.Task<IActionResult> Cart(CartItem cartItem){
+      int id = 1;
+      _dataContext.RemoveFromCart(cartItem);
+      return RedirectToAction("Index", "Home");
+    } 
+  //   {
+  //     _dataContext.RemoveFromCart(cartItem);
+  //     return RedirectToAction("Index", "Product");
+  // }
+  
+  //public IActionResult RemoveFromCart([FromBody] CartItemJSON cartItem) => _dataContext.RemoveFromCart(cartItem);
 
 }

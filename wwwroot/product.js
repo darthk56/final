@@ -76,3 +76,4 @@ async function postCartItem(item) {
     toast("Product Added", `${res.data.product.productName} successfully added to cart.`);
   });
 }
+
