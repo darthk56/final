@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xlBvESGUCFBx7BI6N8ddgjqycbIt40aFuxspDclipK0=",
+  "Hash": "4HtQfjXakTj9Hz2hUTxnHfRcHTkXtexNKi/775DgtNE=",
   "Source": "Northwind",
   "BasePath": "_content/Northwind",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Northwind\\wwwroot",
       "Source": "Northwind",
-      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\",
       "BasePath": "_content/Northwind",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\client.css",
+      "Identity": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\client.css",
       "SourceId": "Northwind",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\",
       "BasePath": "_content/Northwind",
       "RelativePath": "client.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\client.css"
     },
     {
-      "Identity": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\discount.js",
+      "Identity": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\discount.js",
       "SourceId": "Northwind",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\",
       "BasePath": "_content/Northwind",
       "RelativePath": "discount.js",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\discount.js"
     },
     {
-      "Identity": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\product.js",
+      "Identity": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\product.js",
       "SourceId": "Northwind",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\",
       "BasePath": "_content/Northwind",
       "RelativePath": "product.js",
       "AssetKind": "All",

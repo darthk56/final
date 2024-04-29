@@ -4189,26 +4189,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\imorgan\\.nuget\\packages\\": {}
+    "C:\\Users\\Isaac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\imorgan\\Documents\\Northwind-08\\Northwind.csproj",
+      "projectUniqueName": "C:\\Users\\Isaac\\Documents\\final\\Northwind.csproj",
       "projectName": "Northwind",
-      "projectPath": "C:\\Users\\imorgan\\Documents\\Northwind-08\\Northwind.csproj",
-      "packagesPath": "C:\\Users\\imorgan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\imorgan\\Documents\\Northwind-08\\obj\\",
+      "projectPath": "C:\\Users\\Isaac\\Documents\\final\\Northwind.csproj",
+      "packagesPath": "C:\\Users\\Isaac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Isaac\\Documents\\final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\imorgan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Isaac\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4221,6 +4219,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4261,7 +4264,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Routing;
 
 public class ProductController : Controller
 {
@@ -15,17 +16,27 @@ public class ProductController : Controller
   }
   public IActionResult Cart() => View(_dataContext.CartItems.Include("Product").OrderBy(c => c.CartItemId));
   
-    [Authorize(Roles = "northwind-customer"), HttpPost, ValidateAntiForgeryToken]
-    public async System.Threading.Tasks.Task<IActionResult> Cart(CartItem cartItem){
-      int id = 1;
-      _dataContext.RemoveFromCart(cartItem);
-      return RedirectToAction("Index", "Home");
-    } 
-  //   {
-  //     _dataContext.RemoveFromCart(cartItem);
-  //     return RedirectToAction("Index", "Product");
-  // }
-  
-  //public IActionResult RemoveFromCart([FromBody] CartItemJSON cartItem) => _dataContext.RemoveFromCart(cartItem);
+    // [Authorize(Roles = "northwind-customer"), HttpPost, ValidateAntiForgeryToken]
+    // public async System.Threading.Tasks.Task<IActionResult> Cart(int itemId){
+    //   CartItem itemToDelete = _dataContext.CartItems.FirstOrDefault(c => c.CartItemId == itemId);
+    //   _dataContext.RemoveFromCart(itemToDelete);
+    //   return RedirectToAction("Index", "Home");
+    // } 
+
+  [HttpGet]
+  [Route("Product/Cart/{cartId:int}")]
+   public IActionResult Cart(int cartId)
+        {
+            CartItem cart = _dataContext.CartItems.FirstOrDefault(c => c.CartItemId == cartId);
+           _dataContext.RemoveFromCart(cart);
+
+          return RedirectToAction("Redirect", "Product");
+        }
+
+
+public IActionResult Redirect(){
+  return RedirectToAction("Cart", "Product");
+}
+
 
 }

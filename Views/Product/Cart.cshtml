@@ -5,11 +5,11 @@
 <div class="list-group">
     @foreach (CartItem c in Model)
     {
-        <form method="post" asp-action="Cart">
+        <form method="post" asp-action="Cart" asp-route-id="@c.CartItemId">
         <a class="list-group-item list-group-item-action" asp-route-id="@c.CartItemId">@c.Product.ProductName - <i style="opacity:.6;">@c.Quantity</i></a>
         <div class="col col-xs-2">
         </div>
-        <button type="submit" class="btn btn-outline-primary mt-2 mb-4">Delete</button>
+        <button type="submit" class="btn btn-outline-primary mt-2 mb-4" >Delete</button>
         </form>
     }
 </div>

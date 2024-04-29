@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\client.css",
+      "Id": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\client.css",
       "PackagePath": "staticwebassets\\client.css"
     },
     {
-      "Id": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\discount.js",
+      "Id": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\discount.js",
       "PackagePath": "staticwebassets\\discount.js"
     },
     {
-      "Id": "C:\\Users\\imorgan\\Documents\\Northwind-08\\wwwroot\\product.js",
+      "Id": "C:\\Users\\Isaac\\Documents\\final\\wwwroot\\product.js",
       "PackagePath": "staticwebassets\\product.js"
     },
     {
